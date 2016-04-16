@@ -2,7 +2,8 @@ $serif-title: 'Vollkorn', serif;
 $sans-serif-title: 'Philosopher', sans-serif;
 $body-font: 'Raleway', sans-serif;
 $about-background: #eee;
-$nav-text: #d3d3d3;
+$nav-color: #d3d3d3;
+$lighter-nav-color: lighten($nav-color, 10);
 $accent-color: #39f1c8;
 $dark-accent: #173e43;
 $lightest-color: #fff;
@@ -52,7 +53,7 @@ nav {
   a:link,
   a:active,
   a:visited {
-    background-color: $nav-text;
+    background-color: $nav-color;
     color: $lightest-color;
     font-family: $body-font;
     font-size: 16px;
@@ -119,7 +120,7 @@ h2 {
 }
 
 .quotes {
-  background: url('squared_metal.png');
+  background-color: $lighter-nav-color;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -146,7 +147,7 @@ h2 {
 
   .carousel-control {
     background: none;
-    color: $nav-text;
+    color: $nav-color;
     font-size: 2.3em;
     text-shadow: none;
 
@@ -225,6 +226,37 @@ h2 {
   }
 }
 
+.footer {
+  background-color: $nav-color;
+  clear: both;
+  text-align: center;
+  padding-top: 25px;
+}
+
+.social-media {
+  height: 40px;
+  margin: 10px;
+
+  &:hover {
+    opacity: .7;
+    transition: 1s;
+  }
+}
+
+.disclaimer {
+  color: $lightest-color;
+  font-family: $body-font;
+  font-size: 12px;
+}
+
+.up {
+  text-align: right;
+}
+
+.up-arrow {
+  max-height: 25px;
+  margin: 10px;
+}
 
 @media only screen and (max-width: 768px) {
   .hero-background {

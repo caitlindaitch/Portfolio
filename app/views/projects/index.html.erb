@@ -1,6 +1,6 @@
-<div class="hero-background">
+<div class="hero-background" id="top">
   <div class="logo">
-    <%= image_tag("icons/personal_logo.png") %>
+    <%= link_to image_tag("icons/personal_logo.png"), projects_path %>
   </div>
   <nav>
     <div class="nav-item"><a href="#portfolio">Portfolio</a></div>
@@ -156,5 +156,15 @@
 <!-- Beginning of Footer -->
 
 <div class="footer">
-  
+  <%= link_to image_tag("social-media-icons/github.png", :class => "social-media"), projects_path %>
+  <%= link_to image_tag("social-media-icons/linkedin.png", :class => "social-media"), projects_path %>
+  <%= link_to image_tag("social-media-icons/twitter.png", :class => "social-media"), projects_path %>
+  <%= link_to image_tag("social-media-icons/instagram.png", :class => "social-media"), projects_path %>
+  <%= link_to image_tag("social-media-icons/email.png", :class => "social-media"), projects_path %>
+  <div class="disclaimer">
+    This portfolio a Ruby on Rails application that leverages HTML/CSS, Sass, Bootstrap, JavaScript and jQuery. Made by Caitlin Daitch, for Caitlin Daitch. Because...duh.
+  </div>
+  <div class="up">
+    <a href="#top"><%= image_tag("up-arrow", :class => "up-arrow") %></a>
+  </div>
 </div>
