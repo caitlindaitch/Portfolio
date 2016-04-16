@@ -1,8 +1,8 @@
 $serif-title: 'Vollkorn', serif;
 $sans-serif-title: 'Philosopher', sans-serif;
-$body-font: 'Muli', sans-serif;
+$body-font: 'Raleway', sans-serif;
 $about-background: #eee;
-$nav-text: #888;
+$nav-text: #d3d3d3;
 $accent-color: #39f1c8;
 $dark-accent: #173e43;
 $lightest-color: #fff;
@@ -40,18 +40,25 @@ $lightest-color: #fff;
 nav {
   position: absolute;
   right: 0;
-  top: 30px;
+  top: 20px;
   text-align: right;
+  text-transform: uppercase;
+  font-family: $body-font;
+
+  .nav-item {
+    padding-bottom: 20px;
+  }
 
   a:link,
   a:active,
   a:visited {
-    color: $lightest-color;
     background-color: $nav-text;
+    color: $lightest-color;
     font-family: $body-font;
     font-size: 16px;
-    padding: 10px;
     text-decoration: none;
+    padding: 10px;
+    margin-top: 10px;
   }
 
   a:hover {
@@ -59,7 +66,7 @@ nav {
     border-color: $accent-color;
     color: $lightest-color;
     text-decoration: none;
-    transition: .5s;
+    transition: 1s;
   }
 }
 
@@ -172,7 +179,7 @@ h2 {
 .item {
   blockquote {
     border-left: 0;
-    font-family: $sans-serif-title;
+    font-family: $body-font;
     margin: 0;
     text-align: center;
 
@@ -218,8 +225,26 @@ h2 {
   }
 }
 
+
 @media only screen and (max-width: 768px) {
-  h1 {
-    font-size: 20px;
+  .hero-background {
+    background: url('paintSplatterResponsive.png');
   }
+
+  .first-name {
+    font-size: 40px;
+  }
+
+  .last-name {
+    font-size: 40px;
+  }
+
+  .personal-statement {
+    font-size: 16px;
+  }
+
+  .down-arrow {
+    display: none;
+  }
+
 }
