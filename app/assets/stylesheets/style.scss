@@ -1,0 +1,225 @@
+$serif-title: 'Vollkorn', serif;
+$sans-serif-title: 'Philosopher', sans-serif;
+$body-font: 'Muli', sans-serif;
+$about-background: #eee;
+$nav-text: #888;
+$accent-color: #39f1c8;
+$dark-accent: #173e43;
+$lightest-color: #fff;
+
+* {
+  box-sizing: border-box;
+}
+
+.hero-background {
+  align-items: center;
+  background: url('PaintSplatter.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.logo {
+  left: 10px;
+  position: absolute;
+  top: 10px;
+
+  img {
+    max-width: 50px;
+  }
+}
+
+nav {
+  position: absolute;
+  right: 0;
+  top: 30px;
+  text-align: right;
+
+  a:link,
+  a:active,
+  a:visited {
+    color: $lightest-color;
+    background-color: $nav-text;
+    font-family: $body-font;
+    font-size: 16px;
+    padding: 10px;
+    text-decoration: none;
+  }
+
+  a:hover {
+    background-color: $accent-color;
+    border-color: $accent-color;
+    color: $lightest-color;
+    text-decoration: none;
+    transition: .5s;
+  }
+}
+
+.hero-title {
+  color: $lightest-color;
+  max-width: 50%;
+}
+
+.first-name {
+  font-family: $sans-serif-title;
+  font-size: 50px;
+  letter-spacing: 5px;
+}
+
+.last-name {
+  font-family: $serif-title;
+  font-size: 75px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.personal-statement {
+  color: $lightest-color;
+  font-family: $sans-serif-title;
+  font-size: 20px;
+  letter-spacing: 2px;
+  line-height: 120%;
+  text-align: center;
+  width: 50%;
+}
+
+.down-arrow {
+  padding: 30px;
+
+  a:hover {
+    opacity: .8;
+    transition: .5s;
+  }
+}
+
+.arrow-size {
+  width: 50px;
+}
+
+h2 {
+  color: $dark-accent;
+  font-family: $serif-title;
+}
+
+.quotes {
+  background: url('squared_metal.png');
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 250px;
+  width: 100%;
+}
+
+.col-md-offset-2 {
+  margin-left: 0;
+}
+
+.col-md-8 {
+  width: 100%;
+}
+
+.quote-inner {
+  width: 80%;
+  margin: 0 auto;
+}
+
+#quote-carousel {
+  margin-top: 0;
+  padding: 0 10px 30px;
+
+  .carousel-control {
+    background: none;
+    color: $nav-text;
+    font-size: 2.3em;
+    text-shadow: none;
+
+    .left {
+      left: 0;
+    }
+
+    .right {
+      right: 0;
+    }
+  }
+
+  .carousel-indicators {
+    bottom: 0;
+    margin-right: -19px;
+    position: absolute;
+    right: 50%;
+    top: auto;
+
+    li {
+      background: $about-background;
+    }
+
+    .active {
+      background: $accent-color;
+    }
+  }
+}
+
+.item {
+  blockquote {
+    border-left: 0;
+    font-family: $sans-serif-title;
+    margin: 0;
+    text-align: center;
+
+    p::before {
+      float: left;
+      font-family: $body-font;
+      margin-right: 10px;
+    }
+  }
+
+  a:link,
+  a:active,
+  a:visited {
+    color: $dark-accent;
+    text-decoration: none;
+  }
+
+  a:hover {
+    opacity: .5;
+  }
+}
+
+.col-md-3 {
+  padding: 0;
+  height: 300px;
+  overflow: hidden;
+}
+
+.image-container{
+  overflow: hidden;
+  display: inline-block;
+}
+
+.portfolio-image {
+  width: 100%;
+  backface-visibility: hidden;
+
+  &:hover{
+    opacity: .5;
+    transition: 1s;
+    width: 100%;
+    transform: scale(1.1);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 20px;
+  }
+}

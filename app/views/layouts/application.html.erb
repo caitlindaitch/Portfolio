@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <%= favicon_link_tag "icons/favicon_logo.ico" %>
+  <title>Caitlin Daitch || Full-Stack Web Developer</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Vollkorn:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Philosopher:400,400italic,700,700italic" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Muli:400,300italic,300,400italic" rel="stylesheet" type="text/css">
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+</head>
+<body>
+
+  <%= yield %>
+
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+
+</body>
+</html>
