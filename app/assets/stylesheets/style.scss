@@ -258,6 +258,41 @@ h2 {
   margin: 10px;
 }
 
+// About Me Section
+
+.about-me {
+  max-height: 400px;
+  clear: both;
+  overflow: hidden;
+
+  .col-md-6 {
+    padding: 0;
+  }
+
+  img {
+    width: 100%;
+    overflow: hidden;
+  }
+}
+
+.about-description {
+  padding: 10px;
+  text-align: center;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  h2 {
+    font-family: $serif-title;
+    margin: 0;
+  }
+
+  p {
+    font-family: $body-font;
+  }
+}
+
 // Show page starts here
 
 .show-header {
@@ -295,7 +330,6 @@ h2 {
     color: $accent-color;
     padding: 5px;
     border: 2px solid $accent-color;
-    border-radius: 4px;
   }
 
   a:hover {
@@ -303,7 +337,6 @@ h2 {
     color: $lightest-color;
     padding: 5px;
     border: 2px solid $accent-color;
-    border-radius: 4px;
     transition: 1s;
   }
 }
@@ -334,40 +367,6 @@ h2 {
   padding-bottom: 15px;
 }
 
-// About Me Section
-
-.about-me {
-  max-height: 400px;
-  clear: both;
-  overflow: hidden;
-
-  .col-md-6 {
-    padding: 0;
-  }
-
-  img {
-    width: 100%;
-    overflow: hidden;
-  }
-}
-
-.about-description {
-  padding: 10px;
-  text-align: center;
-  min-height: 400px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-  h2 {
-    font-family: $serif-title;
-    margin: 0;
-  }
-
-  p {
-    font-family: $body-font;
-  }
-}
 
 @media only screen and (max-width: 768px) {
   .hero-background {
@@ -390,4 +389,22 @@ h2 {
     display: none;
   }
 
+  .about-me {
+    max-height: none;
+  }
+
+  .show-button {
+    font-family: $body-font;
+    display: block;
+    padding-top: 10px;
+
+    a:link, a:active, a:visited {
+      text-transform: uppercase;
+      text-decoration: none;
+      background-color: $accent-color;
+      color: $lightest-color;
+      padding: 5px;
+      border: 2px solid $accent-color;
+    }
+  }
 }
