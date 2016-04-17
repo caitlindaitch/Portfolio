@@ -111,46 +111,13 @@
 <!-- Beginning of the portfolio section -->
 
 <section id="portfolio" class="portfolio">
-  <div class="col-md-3">
-    <div class="image-container">
-      <a href="#portfolio"><%= image_tag("autoPilot.png", :class => "portfolio-image") %></a>
+  <% @projects.each do |project| %>
+    <div class="col-md-3">
+      <div class="image-container">
+        <%= link_to image_tag(project.thumbnail, :class => "portfolio-image"), project_path(project) %></a>
+      </div>
     </div>
-  </div>
-  <div class="col-md-3">
-    <div class="image-container">
-      <a href="#portfolio"><%= image_tag("barInMind.png", :class => "portfolio-image") %></a>
-    </div>
-  </div>
-  <div class="col-md-3">
-    <div class="image-container">
-      <a href="#portfolio"><%= image_tag("fontConcentration.png", :class => "portfolio-image") %></a>
-    </div>
-  </div>
-  <div class="col-md-3">
-    <div class="image-container">
-      <a href="#portfolio"><%= image_tag("FEWD.png", :class => "portfolio-image") %></a>
-    </div>
-  </div>
-  <div class="col-md-3">
-    <div class="image-container">
-      <a href="#portfolio"><%= image_tag("CaswellDaitch.png", :class => "portfolio-image") %></a>
-    </div>
-  </div>
-  <div class="col-md-3">
-    <div class="image-container">
-      <a href="#portfolio"><%= image_tag("Artwork.png", :class => "portfolio-image") %></a>
-    </div>
-  </div>
-  <div class="col-md-3">
-    <div class="image-container">
-      <a href="#portfolio"><%= image_tag("PersonalLogo.png", :class => "portfolio-image") %></a>
-    </div>
-  </div>
-  <div class="col-md-3">
-    <div class="image-container">
-      <a href="#portfolio"><%= image_tag("DigitalDesign.png", :class => "portfolio-image") %></a>
-    </div>
-  </div>
+  <% end %>
 </section>
 
 <!-- Beginning of Footer -->
@@ -162,7 +129,7 @@
   <%= link_to image_tag("social-media-icons/instagram.png", :class => "social-media"), projects_path %>
   <%= link_to image_tag("social-media-icons/email.png", :class => "social-media"), projects_path %>
   <div class="disclaimer">
-    This portfolio a Ruby on Rails application that leverages HTML/CSS, Sass, Bootstrap, JavaScript and jQuery. Made by Caitlin Daitch, for Caitlin Daitch. Because...duh.
+    This portfolio is a Ruby on Rails application that leverages HTML/CSS, Sass, Bootstrap, JavaScript and jQuery. Made by Caitlin Daitch, for Caitlin Daitch. Because...duh.
   </div>
   <div class="up">
     <a href="#top"><%= image_tag("up-arrow", :class => "up-arrow") %></a>

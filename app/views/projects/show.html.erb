@@ -1,0 +1,52 @@
+<div class="show-header">
+  <div class="logo">
+    <%= link_to image_tag("icons/personal_logo.png"), projects_path %>
+  </div>
+  <h1><%= @project.name %></h1>
+</div>
+<div class="show-header-arrow">
+  <%= image_tag("down-arrow-grey.png") %>
+</div>
+
+<div class="show-content">
+  <div class="row">
+    <div class="show-images col-md-6">
+      <%= image_tag @project.image_one_url, :class => "show-image" %>
+    </div>
+    <div class="show-description col-md-6">
+      <%= @project.description_one %>
+    </div>
+  </div>
+  <div class="row">
+    <div class="show-description col-md-6">
+      <%= @project.description_two %>
+    </div>
+    <div class="show-images col-md-6">
+      <%= image_tag @project.image_two_url, :class => "show-image" %>
+    </div>
+  </div>
+  <div class="row">
+    <div class="show-images col-md-6">
+      <%= image_tag @project.image_three_url, :class => "show-image" %>
+    </div>
+    <div class="show-description col-md-6">
+      <%= @project.description_three %>
+    </div>
+  </div>
+  <div class="row">
+    <div class="show-description col-md-6">
+      <%= @project.description_four %>
+    </div>
+    <div class="show-images col-md-6">
+      <%= image_tag @project.image_four_url, :class => "show-image" %>
+    </div>
+  </div>
+  <div class="row">
+    <div class="show-images col-md-6">
+      <%= image_tag @project.image_five_url, :class => "show-image" %>
+    </div>
+    <div class="show-description col-md-6">
+      <%= @project.description_five %>
+    </div>
+  </div>
+</div>
