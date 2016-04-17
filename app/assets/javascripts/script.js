@@ -15,5 +15,5 @@ $(function() {
 
 $('#quote-carousel').carousel({
   pause: true,
-  interval: 5000,
+  interval: 7500,
 });
