@@ -8,6 +8,11 @@
   <%= image_tag("down-arrow-grey.png") %>
 </div>
 
+<div class="show-links">
+  <span class="show-button"><%= link_to "GitHub Repository", @project.githubURL %></span>
+  <span class="show-button"><%= link_to "View Project", @project.URL %></span>
+</div>
+
 <div class="show-content">
   <div class="row">
     <div class="show-images col-md-6">
