@@ -334,9 +334,44 @@ h2 {
   padding-bottom: 15px;
 }
 
+// About Me Section
+
+.about-me {
+  max-height: 400px;
+  clear: both;
+  overflow: hidden;
+
+  .col-md-6 {
+    padding: 0;
+  }
+
+  img {
+    width: 100%;
+    overflow: hidden;
+  }
+}
+
+.about-description {
+  padding: 10px;
+  text-align: center;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  h2 {
+    font-family: $serif-title;
+    margin: 0;
+  }
+
+  p {
+    font-family: $body-font;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .hero-background {
-    background: url('paintSplatterResponsive.png');
+    background: url("paintSplatterResponsive.png");
   }
 
   .first-name {
