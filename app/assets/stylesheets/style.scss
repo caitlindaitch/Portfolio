@@ -297,7 +297,7 @@ h2 {
 
 .show-header {
   padding: 0;
-  height: 75px;
+  min-height: 75px;
   background-color: $nav-color;
   display: flex;
   justify-content: center;
