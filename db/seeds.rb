@@ -92,10 +92,12 @@ artwork = Project.create(
   name: "Artwork",
   description_one: "Ever since I can remember, I've been an artist. It's a hobby, but one I'm passionate about. I've been developing my own unique style of art that has evolved from my abstract doodling.",
   description_two: "I recently discovered that the abstract doodles I'd been producing were actually a style of art called Zentangles, and I've only grown more passionate since making this discovery.",
-  description_three: "Never heard of Zentangles and want to check out some more? Look up Bioworkz, Pavneet Sembhi and WOLFF Designs, for starters.",
+  description_three: "Zentangle: A form of black-and-white abstract art based on precise and repetitive patterns. This style of art can range from simple doodles to complex and intricate form of art. Zentangles are composed of structured patterns called 'tangles' and often are unplanned in nature--the results tend to surprise even the artists themselves.",
+  description_four: "Never heard of Zentangles and want to check out some more? Look up Bioworkz, Pavneet Sembhi and WOLFF Designs, for starters.",
   image_one_url: "artwork/elephantZentangle.png",
-  image_two_url: "artwork/featherZentangle.png",
+  image_two_url: "artwork/lionZentangle.png",
   image_three_url: "artwork/bobMarleyZentangle.png",
+  image_four_url: "artwork/featherZentangle.png",
   thumbnail: "Artwork.png",
   URL: "http://caitlindaitch.github.io/final-project/"
 )
