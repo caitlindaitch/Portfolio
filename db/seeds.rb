@@ -75,3 +75,49 @@ caitlinZentangle = Project.create(
   githubURL: "https://github.com/caitlindaitch/final-project",
   URL: "http://caitlindaitch.github.io/final-project/"
 )
+
+caswellDaitch = Project.create(
+  name: "Caswell Daitch Architects",
+  description_one: "Even before I was able to code my own websites from scratch I enjoyed creating them using template websites such as Squarespace. I created a website for my mom’s Architecture firm, Caswell Daitch Architects, using a Squarespace template and my own designs.",
+  description_two: "I worked with my mom to choose pictures that would be striking and sleek on her new website, and customized a logo for her to further brand the site.",
+  description_three: "One challenge that I encountered was when I took on the role of IT director and had to find a way transfer her existing domain to the new website. I did significant research on DNS transfers and was ultimately able to get her new website set up with her existing domain name through a third-party provider.",
+  image_one_url: "caswellDaitch/homepage.png",
+  image_two_url: "caswellDaitch/detailPage.png",
+  image_three_url: "caswellDaitch/navigation.png",
+  thumbnail: "CaswellDaitch.png",
+  URL: "http://www.caswelldaitcharchitects.com/"
+)
+
+artwork = Project.create(
+  name: "Artwork",
+  description_one: "Ever since I can remember, I've been an artist. It's a hobby, but one I'm passionate about. I've been developing my own unique style of art that has evolved from my abstract doodling.",
+  description_two: "I recently discovered that the abstract doodles I'd been producing were actually a style of art called Zentangles, and I've only grown more passionate since making this discovery.",
+  description_three: "Never heard of Zentangles and want to check out some more? Look up Bioworkz, Pavneet Sembhi and WOLFF Designs, for starters.",
+  image_one_url: "artwork/elephantZentangle.png",
+  image_two_url: "artwork/featherZentangle.png",
+  image_three_url: "artwork/bobMarleyZentangle.png",
+  thumbnail: "Artwork.png",
+  URL: "http://caitlindaitch.github.io/final-project/"
+)
+
+design = Project.create(
+  name: "Design",
+  description_one: "As a self-taught graphic designer, I've always been quick to jump on the opportunity to play with Photoshop for a purpose. I was asked to turn photographs of my friends into various movie posters and advertisements to promote a 'Through the Decades' theme for the Zeta Tau Alpha's Spring 2014 recruitment.",
+  description_two: "Being able to experiment with Photoshop to recreate iconic pictures was both exciting and challenging. Using Photoshop to recreate something is a different experience than simply creating a new design from scratch, and it was a great experience.",
+  description_three: "Personal favorite? Flashdance. Because I love the 80’s. Enough said.",
+  image_one_url: "design/flashdance.png",
+  image_two_url: "design/rosie.png",
+  image_three_url: "design/desperatelySeekingSusan.png",
+  thumbnail: "DigitalDesign.png",
+)
+
+cartoons = Project.create(
+  name: "Editorial Cartoons",
+  description_one: "Sometimes, it takes a delicate mixture of art and humor to get a point across. I've always been an editorial cartoon fanatic, and loved using it as a creative outlet during my time as an art staffer on my school's online newspaper.",
+  description_two: "Working as a cartoonist was one of my favorite high school memories, hands down. Despite the fact that I had about two loyal readers total, I loved being able to experiment with art that was outside of my comfort zone (read: Zentangles).",
+  description_three: "My cartoonist inspiration? Eric Shansby, cartoonist for Gene Weingarten’s Washington Post Magazine column “Below the Beltway.” He was the substitute for my Journalism class in high school for a few months, and I’m still fan-girling all these years later.",
+  image_one_url: "cartoons/aRod.png",
+  image_two_url: "cartoons/finals.png",
+  image_three_url: "cartoons/magnetBus.png",
+  thumbnail: "Cartoons.png",
+)

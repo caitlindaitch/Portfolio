@@ -11,8 +11,12 @@
 </div>
 
 <div class="show-links">
-  <span class="show-button"><%= link_to "GitHub Repository", @project.githubURL %></span>
-  <span class="show-button"><%= link_to "View Project", @project.URL %></span>
+  <% if @project.githubURL %>
+    <span class="show-button"><%= link_to "GitHub Repository", @project.githubURL %></span>
+  <% end %>
+  <% if @project.URL %>
+    <span class="show-button"><%= link_to "View Project", @project.URL %></span>
+  <% end %>
 </div>
 
 <div class="show-content">
@@ -32,28 +36,34 @@
       <%= image_tag @project.image_two_url, :class => "show-image" %>
     </div>
   </div>
-  <div class="row">
-    <div class="show-images col-md-6">
-      <%= image_tag @project.image_three_url, :class => "show-image" %>
+  <% if @project.description_three %>
+    <div class="row">
+      <div class="show-images col-md-6">
+        <%= image_tag @project.image_three_url, :class => "show-image" %>
+      </div>
+      <div class="show-description col-md-6">
+        <%= @project.description_three %>
+      </div>
     </div>
-    <div class="show-description col-md-6">
-      <%= @project.description_three %>
+  <% end %>
+  <% if @project.description_four %>
+    <div class="row">
+      <div class="show-description col-md-6">
+        <%= @project.description_four %>
+      </div>
+      <div class="show-images col-md-6">
+        <%= image_tag @project.image_four_url, :class => "show-image" %>
+      </div>
     </div>
-  </div>
-  <div class="row">
-    <div class="show-description col-md-6">
-      <%= @project.description_four %>
+  <% end %>
+  <% if @project.description_five %>
+    <div class="row">
+      <div class="show-images col-md-6">
+        <%= image_tag @project.image_five_url, :class => "show-image" %>
+      </div>
+      <div class="show-description col-md-6">
+        <%= @project.description_five %>
+      </div>
     </div>
-    <div class="show-images col-md-6">
-      <%= image_tag @project.image_four_url, :class => "show-image" %>
-    </div>
-  </div>
-  <div class="row">
-    <div class="show-images col-md-6">
-      <%= image_tag @project.image_five_url, :class => "show-image" %>
-    </div>
-    <div class="show-description col-md-6">
-      <%= @project.description_five %>
-    </div>
-  </div>
+  <% end %>
 </div>
