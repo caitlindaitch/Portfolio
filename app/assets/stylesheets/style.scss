@@ -58,8 +58,12 @@ nav {
     font-family: $body-font;
     font-size: 16px;
     text-decoration: none;
+    background: linear-gradient(to right, $nav-color 50%, $accent-color 50%);
+    background-size: 200% 100%;
     padding: 10px 25px 10px 10px;
     margin-top: 10px;
+    transition: 1s ease;
+    background-position:left bottom;
   }
 
   a:hover {
@@ -68,6 +72,7 @@ nav {
     color: $lightest-color;
     text-decoration: none;
     transition: 1s;
+    background-position: right bottom;
   }
 }
 
@@ -276,7 +281,7 @@ h2 {
 }
 
 .about-description {
-  padding: 10px;
+  padding: 50px;
   text-align: center;
   min-height: 400px;
   display: flex;
@@ -327,9 +332,15 @@ h2 {
   a:link, a:active, a:visited {
     text-transform: uppercase;
     text-decoration: none;
+    border: 2px solid $accent-color;
     color: $accent-color;
+    background: $accent-color;
     padding: 5px;
     border: 2px solid $accent-color;
+    background: linear-gradient(to right, $lightest-color 50%, $accent-color 50%);
+    background-size: 210% 100%;
+    background-position:left bottom;
+    transition: 1s ease;
   }
 
   a:hover {
@@ -337,7 +348,7 @@ h2 {
     color: $lightest-color;
     padding: 5px;
     border: 2px solid $accent-color;
-    transition: 1s;
+    background-position: right bottom;
   }
 }
 
@@ -401,10 +412,14 @@ h2 {
     a:link, a:active, a:visited {
       text-transform: uppercase;
       text-decoration: none;
-      background-color: $accent-color;
-      color: $lightest-color;
+      background-color: $lightest-color;
+      color: $accent-color;
       padding: 5px;
       border: 2px solid $accent-color;
+    }
+
+    a:hover {
+      color: $lightest-color;
     }
   }
 
