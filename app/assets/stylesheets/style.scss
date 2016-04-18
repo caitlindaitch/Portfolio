@@ -282,6 +282,11 @@ h2 {
 .up-arrow {
   max-height: 25px;
   margin: 10px;
+
+  &:hover {
+    opacity: .7;
+    transition: 1s;
+  }
 }
 
 // About Me Section
