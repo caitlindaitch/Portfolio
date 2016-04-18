@@ -238,13 +238,19 @@ h2 {
   padding-top: 25px;
 }
 
-.social-media {
-  height: 30px;
-  margin: 10px;
+.social-media-outer {
+  display: inline-block;
+  margin: 5px;
+
+  .social-media {
+    height: 30px;
+    margin: 10px;
+  }
 
   &:hover {
-    opacity: .7;
-    transition: 1s;
+    background-color: $accent-color;
+    border-radius: 7px;
+    transition: 2s;
   }
 }
 
