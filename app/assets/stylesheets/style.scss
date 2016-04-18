@@ -231,6 +231,7 @@ h2 {
     color: $lightest-color;
     padding: 0;
     margin: 0;
+    text-shadow: 2px 2px transparentize($dark-accent, .7);
   }
 }
 
