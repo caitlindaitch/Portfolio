@@ -13,7 +13,10 @@ $(function() {
   });
 });
 
-$('#quote-carousel').carousel({
+$("#quote-carousel").carousel({
   pause: true,
   interval: 7500,
 });
+
+$(".slide-left-start").addClass("slide-left-end");
+$(".slide-right-start").addClass("slide-right-end");
