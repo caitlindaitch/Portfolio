@@ -5,6 +5,7 @@ $about-background: #eee;
 $nav-color: #d3d3d3;
 $lighter-nav-color: lighten($nav-color, 10);
 $accent-color: #39f1c8;
+$light-accent: #e2fff9;
 $dark-accent: #173e43;
 $lightest-color: #fff;
 
@@ -130,7 +131,7 @@ h2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-height: 250px;
+  min-height: 200px;
   width: 100%;
 }
 
@@ -174,7 +175,7 @@ h2 {
     top: auto;
 
     li {
-      background: $about-background;
+      background: $nav-color;
     }
 
     .active {
@@ -223,7 +224,7 @@ h2 {
 .index-subheads {
   clear: both;
   text-align: center;
-  background-color: $nav-color;
+  background-color: $dark-accent;
   padding-top: 15px;
   padding-bottom: 10px;
 
@@ -231,7 +232,7 @@ h2 {
     color: $lightest-color;
     padding: 0;
     margin: 0;
-    text-shadow: 2px 2px transparentize($dark-accent, .7);
+    text-shadow: 2px 2px transparentize($accent-color, .7);
   }
 }
 
