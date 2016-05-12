@@ -42,6 +42,17 @@ barInMind = Project.create(
   URL: "https://bar-in-mind.herokuapp.com/"
 )
 
+moodWave = Project.create(
+  name: "Mood Wave",
+  description_one: "For our final project, we had free reign to create an application on any topic and using any technologies that we wished. As a Javascript enthusiast, the decision to make a MEAN stack application was easy. I decided I wanted to make a New Wave music application in an attempt to introduce my generation to the greatest genre of music out there.",
+  description_two: "I used the LastFM API in order to create my playlists, and each mood returns a list of seven New Wave songs to suit your current state of mind. To accomplish this, I created seed data for all the different moods, and each mood is associated with a song that accurately represents it. For instance, the mood 'Excited' is associated with the song Electricity by Orchestral Manouevers in the Dark.",
+  description_three: "Full disclosure, there are a lot of things I would like to do to further improve Mood Wave. For step one, I would love to create more moods to choose from and finish up the responsive design. Ultimately, I'd like to develop a better way to integrate the LastFM API to allow for more flexibility and randomization of the returned playlists.",
+  image_one_url: "moodWave/homepage.png",
+  image_two_url: "moodWave/moodsLanding.png",
+  image_three_url: "moodWave/moodDetail.png",
+  thumbnail: "moodWave.png",
+)
+
 fontConcentration = Project.create(
   name: "Font Matching Concentration",
   description_one: "For my first project as a WDI student, we were assigned the task to create a JavaScript game of our choosing. As a design nerd, I decided to create a concentration game in which the players are tasked with matching fonts to clear the board. This project holds a very special place in my heart, because it marks the point in my life when I fell head-over-heels in love with JavaScript.",
@@ -100,17 +111,6 @@ artwork = Project.create(
   image_four_url: "artwork/featherZentangle.png",
   thumbnail: "Artwork.png",
   URL: "http://caitlindaitch.github.io/final-project/"
-)
-
-design = Project.create(
-  name: "Design",
-  description_one: "As a self-taught graphic designer, I've always been quick to jump on the opportunity to play with Photoshop for a purpose. I was asked to turn photographs of my friends into various movie posters and advertisements to promote a 'Through the Decades' theme for the Zeta Tau Alpha's Spring 2014 recruitment.",
-  description_two: "Being able to experiment with Photoshop to recreate iconic pictures was both exciting and challenging. Using Photoshop to recreate something is a different experience than simply creating a new design from scratch, and it was a great experience.",
-  description_three: "Personal favorite? Flashdance. Because I love the 80’s. Enough said.",
-  image_one_url: "design/flashdance.png",
-  image_two_url: "design/rosie.png",
-  image_three_url: "design/desperatelySeekingSusan.png",
-  thumbnail: "DigitalDesign.png",
 )
 
 cartoons = Project.create(

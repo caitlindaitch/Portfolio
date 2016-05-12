@@ -227,7 +227,8 @@ h2 {
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: center; }
+  justify-content: center;
+  min-height: 300px; }
   .about-description h2 {
     font-family: "Vollkorn", serif;
     margin: 0; }
