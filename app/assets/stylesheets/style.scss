@@ -212,13 +212,17 @@ h2 {
 
 .col-md-3 {
   padding: 0;
-  height: 300px;
+  height: 275px;
   overflow: hidden;
 }
 
 .image-container{
   overflow: hidden;
   display: inline-block;
+
+  img {
+    transform: scale(1.05);
+  }
 }
 
 .index-subheads {
@@ -238,13 +242,11 @@ h2 {
 
 .portfolio-image {
   width: 100%;
-  backface-visibility: hidden;
 
   &:hover{
     opacity: .5;
     transition: 1s;
-    width: 100%;
-    transform: scale(1.1);
+    transform: scale(1.15);
   }
 }
 
@@ -314,7 +316,7 @@ h2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-height: 300px;
+  min-height: 275px;
 
   h2 {
     font-family: $serif-title;
@@ -421,7 +423,7 @@ h2 {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  min-height: 300px;
+  min-height: 275px;
 }
 
 

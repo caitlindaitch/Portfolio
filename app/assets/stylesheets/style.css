@@ -152,12 +152,14 @@ h2 {
 
 .col-md-3 {
   padding: 0;
-  height: 300px;
+  height: 275px;
   overflow: hidden; }
 
 .image-container {
   overflow: hidden;
   display: inline-block; }
+  .image-container img {
+    transform: scale(1.05); }
 
 .index-subheads {
   clear: both;
@@ -172,13 +174,11 @@ h2 {
     text-shadow: 2px 2px rgba(57, 241, 200, 0.3); }
 
 .portfolio-image {
-  width: 100%;
-  backface-visibility: hidden; }
+  width: 100%; }
   .portfolio-image:hover {
     opacity: .5;
     transition: 1s;
-    width: 100%;
-    transform: scale(1.1); }
+    transform: scale(1.15); }
 
 .footer {
   background-color: #d3d3d3;
@@ -228,7 +228,7 @@ h2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-height: 300px; }
+  min-height: 275px; }
   .about-description h2 {
     font-family: "Vollkorn", serif;
     margin: 0; }
@@ -310,7 +310,7 @@ h2 {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  min-height: 300px; }
+  min-height: 275px; }
 
 .show-image {
   max-width: 100%;
