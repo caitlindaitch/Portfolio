@@ -46,11 +46,13 @@ moodWave = Project.create(
   name: "Mood Wave",
   description_one: "For our final project, we had free reign to create an application on any topic and using any technologies that we wished. As a Javascript enthusiast, the decision to make a MEAN stack application was easy. I decided I wanted to make a New Wave music application in an attempt to introduce my generation to the greatest genre of music out there.",
   description_two: "I used the LastFM API in order to create my playlists, and each mood returns a list of seven New Wave songs to suit your current state of mind. To accomplish this, I created seed data for all the different moods, and each mood is associated with a song that accurately represents it. For instance, the mood 'Excited' is associated with the song Electricity by Orchestral Manouevers in the Dark.",
-  description_three: "Full disclosure, there are a lot of things I would like to do to further improve Mood Wave. For step one, I would love to create more moods to choose from and finish up the responsive design. Ultimately, I'd like to develop a better way to integrate the LastFM API to allow for more flexibility and randomization of the returned playlists.",
+  description_three: "Ideally, I want to update the app to produce a randomized playlist for each mood, so you can return to the application and get a new playlist for the same mood at will.",
   image_one_url: "moodWave/homepage.png",
   image_two_url: "moodWave/moodsLanding.png",
   image_three_url: "moodWave/moodDetail.png",
   thumbnail: "moodWave.png",
+  githubURL: "https://github.com/caitlindaitch/moodWave",
+  URL: "https://mood-wave.herokuapp.com"
 )
 
 fontConcentration = Project.create(
