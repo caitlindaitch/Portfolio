@@ -279,6 +279,19 @@ h2 {
     border: 2px solid #39f1c8;
     background-position: right bottom; }
 
+.show-technologies {
+  width: 100%;
+  text-align: center;
+  padding-top: 30px; }
+  .show-technologies .technology {
+    font-family: "Raleway", sans-serif;
+    background-color: #d3d3d3;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    margin: 5px; }
+
 .show-content {
   max-width: 800px;
   margin: 0 auto;

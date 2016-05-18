@@ -384,6 +384,23 @@ h2 {
   }
 }
 
+.show-technologies {
+  width: 100%;
+  text-align: center;
+  padding-top: 30px;
+
+  .technology {
+    font-family: $body-font;
+    background-color: $nav-color;
+    color: $lightest-color;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px transparentize(black, .5);
+    margin: 5px;
+  }
+
+}
+
 .show-content {
   max-width: 800px;
   margin: 0 auto;
@@ -391,8 +408,6 @@ h2 {
   font-family: $body-font;
   text-align: center;
 }
-
-
 
 .slide-left-start {
   left: -100%;

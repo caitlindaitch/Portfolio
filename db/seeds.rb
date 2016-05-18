@@ -10,7 +10,7 @@ Project.destroy_all
 
 autoPilot = Project.create(
   name: "Auto Pilot",
-  description_one: "Auto Pilot is a web application designed to allow users to create trips containing locations through the Google Places API and display the route on a map. This was my third project throughout the course of WDI, and our first true experience with a group project.",
+  description_one: "Auto Pilot is a web application designed to allow users to create trips containing locations through the Google Places API and display the route on a map. This was my third project throughout the course of WDI and first group project.",
   description_two: "Working on Auto Pilot was simultaneously one of the most challenging and rewarding experiences of my life. My group worked together well, but we experienced significant difficulties along the way. Throughout the course of the project I worked on the Google Places API integration, AngularJS front-end, connecting the data received from the Google Places API and storing it in our own Rails API, and the front-end design and development.",
   description_three: "Working with the Google Places API was incredibly challenging and a hugely important learning experience for myself and my team members. We had to create unique functions to access the correct data in the API based on search queries, and then had to take output of that search and store the JSON object into our database.",
   description_four: "To allow a single map to be displayed with any amount of coordinates that a user has added to a trip, we had to write a function that would account for any amount of locations on a single trip. We passed an origin, destination and way-points into the Google Maps API URL in order to display all the points on a map.",
@@ -22,7 +22,12 @@ autoPilot = Project.create(
   image_five_url: "AutoPilot/autoPilotSearch.png",
   thumbnail: "autoPilot.png",
   githubURL: "https://github.com/khenry10/project_3",
-  URL: "https://auto-pilot.herokuapp.com/#/trips"
+  URL: "https://auto-pilot.herokuapp.com/#/trips",
+  technology1: "AngularJS",
+  technology2: "Ruby on Rails",
+  technology3: "Google Places API",
+  technology4: "Google Maps API",
+  technology5: "HTML/CSS/Sass"
 )
 
 barInMind = Project.create(

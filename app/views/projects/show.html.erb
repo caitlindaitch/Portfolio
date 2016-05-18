@@ -19,6 +19,24 @@
   <% end %>
 </div>
 
+<div class="show-technologies">
+  <% if @project.technology1 %>
+    <span class="technology"><%= @project.technology1 %></span>
+  <% end %>
+  <% if @project.technology2 %>
+    <span class="technology"><%= @project.technology2 %></span>
+  <% end %>
+  <% if @project.technology3 %>
+    <span class="technology"><%= @project.technology3 %></span>
+  <% end %>
+  <% if @project.technology4 %>
+    <span class="technology"><%= @project.technology4 %></span>
+  <% end %>
+  <% if @project.technology5 %>
+    <span class="technology"><%= @project.technology5 %></span>
+  <% end %>
+</div>
+
 <div class="show-content">
   <div class="row">
     <div class="show-images col-md-6 slide-left-start">
