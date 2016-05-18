@@ -296,9 +296,15 @@ h2 {
 // About Me Section
 
 .about-me {
-  max-height: 400px;
+  max-height: 325px;
   clear: both;
   overflow: hidden;
+
+  .headshot {
+    width: 25%;
+    display: inline-block;
+    float: left;
+  }
 
   .col-md-6 {
     padding: 0;
@@ -471,7 +477,14 @@ h2 {
 
   .about-me {
     max-height: none;
+
+    .headshot {
+      width: 100%;
+      float: none;
+    }
+
   }
+
 
   .show-button {
     font-family: $body-font;

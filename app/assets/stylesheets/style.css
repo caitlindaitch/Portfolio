@@ -213,9 +213,13 @@ h2 {
     transition: 1s; }
 
 .about-me {
-  max-height: 400px;
+  max-height: 325px;
   clear: both;
   overflow: hidden; }
+  .about-me .headshot {
+    width: 25%;
+    display: inline-block;
+    float: left; }
   .about-me .col-md-6 {
     padding: 0; }
   .about-me img {
@@ -347,6 +351,9 @@ h2 {
 
   .about-me {
     max-height: none; }
+    .about-me .headshot {
+      width: 100%;
+      float: none; }
 
   .show-button {
     font-family: "Raleway", sans-serif;

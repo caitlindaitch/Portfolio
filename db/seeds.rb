@@ -30,6 +30,24 @@ autoPilot = Project.create(
   technology5: "HTML/CSS/Sass"
 )
 
+moodWave = Project.create(
+  name: "Mood Wave",
+  description_one: "For our final project, we had free reign to create an application on any topic and using any technologies that we wished. As a Javascript enthusiast, the decision to make a MEAN stack application was easy. I decided I wanted to make a New Wave music application in an attempt to introduce my generation to the greatest genre of music out there.",
+  description_two: "I used the LastFM API in order to create my playlists, and each mood returns a list of seven New Wave songs to suit your current state of mind. To accomplish this, I created seed data for all the different moods, and each mood is associated with a song that accurately represents it. For instance, the mood 'Excited' is associated with the song Electricity by Orchestral Manouevers in the Dark.",
+  description_three: "Ideally, I want to update the app to produce a randomized playlist for each mood, so you can return to the application and get a new playlist for the same mood at will.",
+  image_one_url: "moodWave/homepage.png",
+  image_two_url: "moodWave/moodsLanding.png",
+  image_three_url: "moodWave/moodDetail.png",
+  thumbnail: "moodWave.png",
+  githubURL: "https://github.com/caitlindaitch/moodWave",
+  URL: "https://mood-wave.herokuapp.com",
+  technology1: "AngularJS",
+  technology2: "Node.js",
+  technology3: "Express",
+  technology4: "LastFM API",
+  technology5: "HTML/CSS/Sass"
+)
+
 barInMind = Project.create(
   name: "Bar In Mind",
   description_one: "Bar in Mind is a D.C. community web application built with Ruby on Rails. It allows users to sort by D.C. neighborhood to determine what users have deemed to be the best bars in the area. If a neighborhood has not yet been created and you are signed in as a user, you need to create a new one before you can add the designated bars for that neighborhood. If you want to add a bar to an existing neighborhood, you simply click into the neighborhood and select the option to add a new bar.",
@@ -44,21 +62,14 @@ barInMind = Project.create(
   image_five_url: "barInMind/barInMindFavorites.png",
   thumbnail: "barInMind.png",
   githubURL: "https://github.com/caitlindaitch/bar_in_mind",
-  URL: "https://bar-in-mind.herokuapp.com/"
+  URL: "https://bar-in-mind.herokuapp.com/",
+  technology1: "Ruby",
+  technology2: "Rails",
+  technology3: "RSpec",
+  technology4: "Bootstrap",
+  technology5: "HTML/CSS/Sass"
 )
 
-moodWave = Project.create(
-  name: "Mood Wave",
-  description_one: "For our final project, we had free reign to create an application on any topic and using any technologies that we wished. As a Javascript enthusiast, the decision to make a MEAN stack application was easy. I decided I wanted to make a New Wave music application in an attempt to introduce my generation to the greatest genre of music out there.",
-  description_two: "I used the LastFM API in order to create my playlists, and each mood returns a list of seven New Wave songs to suit your current state of mind. To accomplish this, I created seed data for all the different moods, and each mood is associated with a song that accurately represents it. For instance, the mood 'Excited' is associated with the song Electricity by Orchestral Manouevers in the Dark.",
-  description_three: "Ideally, I want to update the app to produce a randomized playlist for each mood, so you can return to the application and get a new playlist for the same mood at will.",
-  image_one_url: "moodWave/homepage.png",
-  image_two_url: "moodWave/moodsLanding.png",
-  image_three_url: "moodWave/moodDetail.png",
-  thumbnail: "moodWave.png",
-  githubURL: "https://github.com/caitlindaitch/moodWave",
-  URL: "https://mood-wave.herokuapp.com"
-)
 
 fontConcentration = Project.create(
   name: "Font Matching Concentration",
@@ -74,7 +85,11 @@ fontConcentration = Project.create(
   image_five_url: "fontConcentration/concentrationYouLose.png",
   thumbnail: "fontConcentration.png",
   githubURL: "https://github.com/caitlindaitch/ConcentrationGame",
-  URL: "http://caitlindaitch.github.io/ConcentrationGame"
+  URL: "http://caitlindaitch.github.io/ConcentrationGame",
+  technology1: "Vanilla JavaScript",
+  technology2: "HTML/CSS/Sass",
+  technology3: "Bootstrap",
+  technology4: "Material Design"
 )
 
 caitlinZentangle = Project.create(
@@ -91,7 +106,10 @@ caitlinZentangle = Project.create(
   image_five_url: "caitlinZentangles/zentanglePopupResponsive.png",
   thumbnail: "FEWD.png",
   githubURL: "https://github.com/caitlindaitch/final-project",
-  URL: "http://caitlindaitch.github.io/final-project/"
+  URL: "http://caitlindaitch.github.io/final-project/",
+  technology1: "HTML/CSS",
+  technology2: "JavaScript/jQuery",
+  technology3: "Velocity.js"
 )
 
 caswellDaitch = Project.create(
@@ -103,7 +121,9 @@ caswellDaitch = Project.create(
   image_two_url: "caswellDaitch/detailPage.png",
   image_three_url: "caswellDaitch/navigation.png",
   thumbnail: "CaswellDaitch.png",
-  URL: "http://www.caswelldaitcharchitects.com/"
+  URL: "http://www.caswelldaitcharchitects.com/",
+  technology1: "Squarespace",
+  technology2: "Photoshop"
 )
 
 artwork = Project.create(
@@ -117,7 +137,8 @@ artwork = Project.create(
   image_three_url: "artwork/bobMarleyZentangle.png",
   image_four_url: "artwork/featherZentangle.png",
   thumbnail: "Artwork.png",
-  URL: "http://caitlindaitch.github.io/final-project/"
+  URL: "http://caitlindaitch.github.io/final-project/",
+  technology1: "Pen and Paper"
 )
 
 cartoons = Project.create(
@@ -129,4 +150,6 @@ cartoons = Project.create(
   image_two_url: "cartoons/finals.png",
   image_three_url: "cartoons/magnetBus.png",
   thumbnail: "Cartoons.png",
+  technology1: "Photoshop",
+  technology2: "Pen and Paper"
 )
