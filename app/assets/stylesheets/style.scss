@@ -475,6 +475,10 @@ h2 {
     display: none;
   }
 
+  .col-md-3 {
+    height: 350px;
+  }
+
   .about-me {
     max-height: none;
 
@@ -484,7 +488,6 @@ h2 {
     }
 
   }
-
 
   .show-button {
     font-family: $body-font;
@@ -509,15 +512,43 @@ h2 {
     width: 80%;
     margin: 0 auto;
   }
+
+  .show-description {
+    margin: 30px;
+  }
+
+  .technology {
+    display: inline-block;
+    margin-top: 30px;
+  }
+
 }
 
 @media only screen
 and (min-device-width : 768px)
 and (max-device-width : 1024px)
 and (orientation : portrait) {
+
+  .about-me {
+    max-height: none;
+
+    .headshot {
+      display: none;
+    }
+
+  }
+
   .hero-background {
     background: url("PaintSplatter.jpg");
     background-size: cover;
     background-position: center;
+  }
+
+  .show-images {
+    margin: 50px;
+  }
+
+  .show-description {
+    margin: 50px;
   }
 }

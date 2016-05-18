@@ -349,6 +349,9 @@ h2 {
   .down-arrow {
     display: none; }
 
+  .col-md-3 {
+    height: 350px; }
+
   .about-me {
     max-height: none; }
     .about-me .headshot {
@@ -371,11 +374,29 @@ h2 {
 
   .show-title {
     width: 80%;
-    margin: 0 auto; } }
+    margin: 0 auto; }
+
+  .show-description {
+    margin: 30px; }
+
+  .technology {
+    display: inline-block;
+    margin-top: 30px; } }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .about-me {
+    max-height: none; }
+    .about-me .headshot {
+      display: none; }
+
   .hero-background {
     background: url("PaintSplatter.jpg");
     background-size: cover;
-    background-position: center; } }
+    background-position: center; }
+
+  .show-images {
+    margin: 50px; }
+
+  .show-description {
+    margin: 50px; } }
 
 /*# sourceMappingURL=style.css.map */
