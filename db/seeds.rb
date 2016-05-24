@@ -92,6 +92,19 @@ fontConcentration = Project.create(
   technology4: "Material Design"
 )
 
+bowieIpsum = Project.create(
+  name: "Lorem Ipsum From Mars",
+  description_one: "For a fun side project, a friend and I came up with the idea to create a Lorem Ipsum generator that produces paragraphs of David Bowie lyrics. I decided to make a MEAN stack application where I stored the Bowie lyrics as seed data and randomly output lyrics using a randomization function and Angular to display the lyrics.",
+  image_one_url: "bowie-ipsum/bowie-lorem-ipsum.png",
+  thumbnail: "bowieIpsum.png",
+  githubURL: "https://github.com/margolanier/lorem-ipsum-on-mars",
+  URL: "https://lorem-ipsum-on-mars.herokuapp.com",
+  technology1: "AngularJS",
+  technology2: "Node.js",
+  technology3: "Express",
+  technology5: "HTML/CSS/Sass"
+)
+
 caitlinZentangle = Project.create(
   name: "Caitlin's Zentangles",
   description_one: "This was my final project for the part-time Front-End Web Development course I took at General Assembly during the summer of 2015. The class focused exclusively on HTML/CSS, JavaScript and various CSS and JavaScript libraries. This is a completely static site (no views or templates were used in the making of this website--oh the pain!).",
@@ -139,17 +152,4 @@ artwork = Project.create(
   thumbnail: "Artwork.png",
   URL: "http://caitlindaitch.github.io/final-project/",
   technology1: "Pen and Paper"
-)
-
-cartoons = Project.create(
-  name: "Editorial Cartoons",
-  description_one: "Sometimes, it takes a delicate mixture of art and humor to get a point across. I've always been an editorial cartoon fanatic, and loved using it as a creative outlet during my time as an art staffer on my school's online newspaper.",
-  description_two: "Working as a cartoonist was one of my favorite high school memories, hands down. Despite the fact that I had about two loyal readers total, I loved being able to experiment with art that was outside of my comfort zone (read: Zentangles).",
-  description_three: "My cartoonist inspiration? Eric Shansby, cartoonist for Gene Weingarten’s Washington Post Magazine column “Below the Beltway.” He was the substitute for my Journalism class in high school for a few months, and I’m still fan-girling all these years later.",
-  image_one_url: "cartoons/aRod.png",
-  image_two_url: "cartoons/finals.png",
-  image_three_url: "cartoons/magnetBus.png",
-  thumbnail: "Cartoons.png",
-  technology1: "Photoshop",
-  technology2: "Pen and Paper"
 )
