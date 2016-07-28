@@ -18,5 +18,5 @@ $("#quote-carousel").carousel({
   interval: 7500,
 });
 
-$(".slide-left-start").addClass("slide-left-end");
-$(".slide-right-start").addClass("slide-right-end");
+// $(".slide-left-start").addClass("slide-left-end");
+// $(".slide-right-start").addClass("slide-right-end");

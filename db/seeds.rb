@@ -124,32 +124,3 @@ caitlinZentangle = Project.create(
   technology2: "JavaScript/jQuery",
   technology3: "Velocity.js"
 )
-
-caswellDaitch = Project.create(
-  name: "Caswell Daitch Architects",
-  description_one: "Even before I was able to code my own websites from scratch I enjoyed creating them using template websites such as Squarespace. I created a website for my mom’s Architecture firm, Caswell Daitch Architects, using a Squarespace template and my own designs.",
-  description_two: "I worked with my mom to choose pictures that would be striking and sleek on her new website, and customized a logo for her to further brand the site.",
-  description_three: "One challenge that I encountered was when I took on the role of IT director and had to find a way transfer her existing domain to the new website. I did significant research on DNS transfers and was ultimately able to get her new website set up with her existing domain name through a third-party provider.",
-  image_one_url: "caswellDaitch/homepage.png",
-  image_two_url: "caswellDaitch/detailPage.png",
-  image_three_url: "caswellDaitch/navigation.png",
-  thumbnail: "CaswellDaitch.png",
-  URL: "http://www.caswelldaitcharchitects.com/",
-  technology1: "Squarespace",
-  technology2: "Photoshop"
-)
-
-artwork = Project.create(
-  name: "Artwork",
-  description_one: "Ever since I can remember, I've been an artist. It's a hobby, but one I'm passionate about. I've been developing my own unique style of art that has evolved from my abstract doodling.",
-  description_two: "I recently discovered that the abstract doodles I'd been producing were actually a style of art called Zentangles, and I've only grown more passionate since making this discovery.",
-  description_three: "Zentangle: A form of black-and-white abstract art based on precise and repetitive patterns. This style of art can range from simple doodles to complex and intricate form of art. Zentangles are composed of structured patterns called 'tangles' and often are unplanned in nature--the results tend to surprise even the artists themselves.",
-  description_four: "Never heard of Zentangles and want to check out some more? Look up Bioworkz, Pavneet Sembhi and WOLFF Designs, for starters.",
-  image_one_url: "artwork/elephantZentangle.png",
-  image_two_url: "artwork/lionZentangle.png",
-  image_three_url: "artwork/bobMarleyZentangle.png",
-  image_four_url: "artwork/featherZentangle.png",
-  thumbnail: "Artwork.png",
-  URL: "http://caitlindaitch.github.io/final-project/",
-  technology1: "Pen and Paper"
-)

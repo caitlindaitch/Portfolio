@@ -5,43 +5,13 @@
   <title>Caitlin Daitch || Full-Stack Web Developer</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Vollkorn:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Philosopher:400,400italic,700,700italic" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Muli:400,300italic,300,400italic" rel="stylesheet" type="text/css">
-  <link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
 </head>
 <body>
-  <span id="top"></span>
-  
   <%= yield %>
 
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-
-  <div class="footer">
-    <span class="social-media-outer">
-      <%= link_to image_tag("social-media-icons/github.png", :class => "social-media"), "https://github.com/caitlindaitch" %>
-    </span>
-    <span class="social-media-outer">
-      <%= link_to image_tag("social-media-icons/linkedin.png", :class => "social-media"), "https://www.linkedin.com/in/caitlindaitch" %>
-    </span>
-    <span class="social-media-outer">
-      <%= link_to image_tag("social-media-icons/twitter.png", :class => "social-media"), "https://twitter.com/cdaitch" %>
-    </span>
-    <span class="social-media-outer">
-      <%= link_to image_tag("social-media-icons/instagram.png", :class => "social-media"), "https://www.instagram.com/caitlindaitch/" %>
-    </span>
-    <span class="social-media-outer">
-      <%= link_to image_tag("social-media-icons/email.png", :class => "social-media"), "mailto:caitlin.daitch@gmail.com" %>
-    </span>
-    <div class="disclaimer">
-      This portfolio is a Ruby on Rails application that leverages HTML/CSS, Sass, Bootstrap, JavaScript and jQuery. Made by Caitlin Daitch, for Caitlin Daitch. Because...duh.
-    </div>
-    <div class="up">
-      <a href="#top"><%= image_tag("up-arrow", :class => "up-arrow") %></a>
-    </div>
-  </div>
-
 </body>
 </html>

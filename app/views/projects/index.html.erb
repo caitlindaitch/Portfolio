@@ -1,141 +1,57 @@
-<div class="hero-background">
-  <div class="logo">
-    <%= link_to image_tag("icons/personal_logo.png"), projects_path %>
-  </div>
+<header>
   <nav>
-    <div class="nav-item"><a href="#portfolio">Portfolio</a></div>
-    <div class="nav-item"><a href="#about-me">About Me</a></div>
+    <div class="nav-item"><a href="#portfolio" class="z-depth-1">Portfolio</a></div>
+    <div class="nav-item"><a href="#about" class="z-depth-1">About Me</a></div>
   </nav>
-
-  <div class="hero-title">
-    <h1>
-      <div class="first-name text-lowercase"><em>Caitlin</em></div>
-      <div class="last-name text-uppercase">Daitch</div>
-    </h1>
+  <h1>
+    <div class="first-name">Caitlin</div>
+    <div class="last-name">Daitch</div>
+  </h1>
+  <div class="description">
+    Front-End Developer at <a href="http://www.fundrise.com">Fundrise</a>. Design nerd. New Wave Enthusiast.
   </div>
-
-  <div class="personal-statement">
-    <strong>Web developer</strong> who harnesses <strong>creativity</strong> to make the ordinary extraordinary.
-  </div>
-
-  <div class="down-arrow">
-    <a href="#quotes"><%= image_tag("down-arrow", :class => "arrow-size") %></a>
-  </div>
-</div>
-
-<!-- Beginning of the quotes section -->
-
-<div class="container quotes" id="quotes">
-  <div class="row">
-    <div class="col-md-offset-2 col-md-8">
-      <div class="carousel slide" data-ride="carousel" id="quote-carousel">
-        <!-- Bottom Carousel Indicators -->
-        <ol class="carousel-indicators">
-          <li data-target="#quote-carousel" data-slide-to="0" class="active"></li>
-          <li data-target="#quote-carousel" data-slide-to="1"></li>
-          <li data-target="#quote-carousel" data-slide-to="2"></li>
-          <li data-target="#quote-carousel" data-slide-to="3"></li>
-          <li data-target="#quote-carousel" data-slide-to="4"></li>
-        </ol>
-
-        <!-- Carousel Slides / Quotes -->
-        <div class="carousel-inner">
-
-          <!-- Quote 1 -->
-          <div class="item active">
-            <blockquote>
-              <div class="row">
-                <div class="col-sm-12">
-                  <p class="quote-inner">"Always code as if the person who ends up maintaining your code is a violent psychopath who knows where you live"</p>
-                  <small>Ward Cunningham</small>
-                </div>
-              </div>
-            </blockquote>
-          </div>
-          <!-- Quote 2 -->
-          <div class="item">
-            <blockquote>
-              <div class="row">
-                <div class="col-sm-12">
-                  <p class="quote-inner">"If you're ever sad, just remember the solar system is 4.543 billion years old and you somehow managed to exist at the same time as David Bowie."</p>
-                  <small><a href="https://twitter.com/jesuisdean">Dean Podestá</a></small>
-                </div>
-              </div>
-            </blockquote>
-          </div>
-          <!-- Quote 3 -->
-          <div class="item">
-            <blockquote>
-              <div class="row">
-                <div class="col-sm-12">
-                  <p class="quote-inner">A SQL query goes into a bar, walks up to two tables and asks, "Can I join you?"</p>
-                  <small>Anonymous Stack Overflow User</small>
-                </div>
-              </div>
-            </blockquote>
-          </div>
-          <!-- Quote 4 -->
-          <div class="item">
-            <blockquote>
-              <div class="row">
-                <div class="col-sm-12">
-                  <p class="quote-inner">A programmer puts two glasses on his bedside table before going to sleep. A full one, in case he gets thirsty, and an empty one, in case he doesn’t.</p>
-                  <small><a href="https://www.apico.net/blog/what-i-learned-about-programmers-reading-200-programming-jokes-part-1.html">Anna Sopova</a></small>
-                </div>
-              </div>
-            </blockquote>
-          </div>
-          <!-- Quote 5 -->
-          <div class="item">
-            <blockquote>
-              <div class="row">
-                <div class="col-sm-12">
-                  <p class="quote-inner">"How did you find America? Turned left at Greenland."</p>
-                  <small>John Lennon, "A Hard Day's Night"</small>
-                </div>
-              </div>
-            </blockquote>
-          </div>
-        </div>
-        <a class="carousel-control left" data-target="#quote-carousel" data-slide="prev">
-          <span class="glyphicon glyphicon-chevron-left"></span>
-        </a>
-        <a class="carousel-control right" data-target="#quote-carousel" data-slide="next">
-          <span class="glyphicon glyphicon-chevron-right"></span>
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Beginning of the portfolio section -->
-
-<section id="portfolio" class="portfolio">
-  <div class="index-subheads">
+</header>
+<container>
+  <div class="section-header" id="portfolio">
     <h2>Portfolio</h2>
   </div>
-  <% @projects.each do |project| %>
-    <div class="col-md-3 col-sm-6">
-      <div class="image-container">
-        <%= link_to image_tag(project.thumbnail, :class => "portfolio-image"), project_path(project) %>
+  <div class="row">
+    <div id="portfolio" class="row">
+      <% @projects.each do |project| %>
+        <div class="col m2 s12">
+          <div class="image-container">
+            <%= link_to image_tag(project.thumbnail, :class => "thumbnail"), project_path(project) %>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</container>
+
+<container>
+  <div class="section-header" id="about">
+    <h2>About Caitlin</h2>
+  </div>
+  <div class="row">
+    <div class="col m3 s12">
+      <%= image_tag("caitlin_fundrise.jpg", :class => "headshot") %>
+    </div>
+    <div class="col m9 s12 about-description">
+      <p>I have been interested in programming and design since middle school when I spent my free time building websites for fun. Years later, I hit the jackpot when I was offered a position as a Digital Producer for a web development agency in Washington, DC. Working as a project manager for all things digital ultimately solidified my passion for web development. I fell in love with programming after taking a part-time Front End Web Development course, and soon after decided to enroll in General Assembly's full-time immersive course. It has been true love ever since.</p>
+      <p>These are a few of my favorite things:</p>
+      <div class="skills">
+        <%= image_tag("icons/javascript.jpg", :class =>"icon", :alt =>"JavaScript") %>
+        <%= image_tag("icons/css3.png", :class =>"icon", :alt =>"CSS") %>
+        <%= image_tag("icons/sass.png", :class =>"icon", :alt =>"Sass") %>
+        <%= image_tag("icons/html5.png", :class =>"icon", :alt =>"HTML") %>
+        <%= image_tag("icons/angular.png", :class =>"icon", :alt =>"AngularJS") %>
+        <%= image_tag("icons/ruby.png", :class =>"icon", :alt =>"Ruby") %>
+        <%= image_tag("icons/rails.png", :class =>"icon", :alt =>"Rails") %>
+        <%= image_tag("icons/node.jpg", :class =>"icon", :alt =>"Node.js") %>
+        <%= image_tag("icons/mongo.png", :class =>"icon", :alt =>"MongoDB") %>
+        <%= image_tag("icons/git.png", :class =>"icon", :alt =>"Git") %>
+        <%= image_tag("icons/photoshop.svg", :class =>"icon", :alt =>"Photoshop") %>
       </div>
     </div>
-  <% end %>
-</section>
-
-<!-- Beginning of About Me -->
-
-<div class="about-me" id="about-me">
-  <div class="index-subheads">
-    <h2>About Caitlin Daitch</h2>
   </div>
-  <div class="headshot">
-    <%= image_tag("caitlinHeadshot.png") %>
-  </div>
-  <div class="col-md-9">
-    <div class="about-description">
-      <p>I have been interested in programming and design since middle school when I spent my free time building websites for fun. Years later, I hit the jackpot when I was offered a position as a Digital Producer for a web development agency in Washington, DC. Working as a project manager for all things digital ultimately solidified my passion for web development. I fell in love with programming after taking a part-time Front End Web Development course, and soon after decided to enroll in General Assembly's full-time immersive course. It has been true love ever since.</p>
-      <p><strong>Skills and Tools:</strong> JavaScript, jQuery, AngularJS, Node.js HTML/CSS, Sass/SCSS, Express, MongoDB, Mongoose, jQuery, Ruby, Rails, Active Record, AJAX, API integration, Bootstrap, Git, GitHub, Adobe Photoshop, Adobe Illustrator.</p>
-    </div>
-  </div>
-</div>
+</container>

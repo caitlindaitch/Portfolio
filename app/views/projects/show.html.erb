@@ -1,13 +1,5 @@
-<div class="show-header">
-  <div class="logo">
-    <%= link_to image_tag("icons/personal_logo.png"), projects_path %>
-  </div>
-  <div class="show-title">
-    <h1><%= @project.name %></h1>
-  </div>
-</div>
-<div class="show-header-arrow">
-  <%= image_tag("down-arrow-grey.png") %>
+<div class="show-title">
+  <h1><%= @project.name %></h1>
 </div>
 
 <div class="show-links">
@@ -39,49 +31,49 @@
 
 <div class="show-content">
   <div class="row">
-    <div class="show-images col-md-6 slide-left-start">
+    <div class="show-images col m6 slide-left-start">
       <%= image_tag @project.image_one_url, :class => "show-image" %>
     </div>
-    <div class="show-description col-md-6 slide-right-start">
+    <div class="show-description col m6 slide-right-start">
       <%= @project.description_one %>
     </div>
   </div>
   <% if @project.description_two %>
     <div class="row">
-      <div class="show-description col-md-6 slide-left-start">
+      <div class="show-description col m6 slide-left-start">
         <%= @project.description_two %>
       </div>
-      <div class="show-images col-md-6 slide-right-start">
+      <div class="show-images col m6 slide-right-start">
         <%= image_tag @project.image_two_url, :class => "show-image" %>
       </div>
     </div>
   <% end %>
   <% if @project.description_three %>
     <div class="row">
-      <div class="show-images col-md-6 slide-left-start">
+      <div class="show-images col m6 slide-left-start">
         <%= image_tag @project.image_three_url, :class => "show-image" %>
       </div>
-      <div class="show-description col-md-6 slide-right-start">
+      <div class="show-description col m6 slide-right-start">
         <%= @project.description_three %>
       </div>
     </div>
   <% end %>
   <% if @project.description_four %>
     <div class="row">
-      <div class="show-description col-md-6 slide-left-start">
+      <div class="show-description col m6 slide-left-start">
         <%= @project.description_four %>
       </div>
-      <div class="show-images col-md-6 slide-right-start">
+      <div class="show-images col m6 slide-right-start">
         <%= image_tag @project.image_four_url, :class => "show-image" %>
       </div>
     </div>
   <% end %>
   <% if @project.description_five %>
     <div class="row">
-      <div class="show-images col-md-6 slide-left-start">
+      <div class="show-images col m6 slide-left-start">
         <%= image_tag @project.image_five_url, :class => "show-image" %>
       </div>
-      <div class="show-description col-md-6 slide-right-start">
+      <div class="show-description col m6 slide-right-start">
         <%= @project.description_five %>
       </div>
     </div>

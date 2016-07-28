@@ -1,65 +1,111 @@
-$serif-title: 'Vollkorn', serif;
-$sans-serif-title: 'Philosopher', sans-serif;
-$body-font: 'Raleway', sans-serif;
-$about-background: #eee;
-$nav-color: #d3d3d3;
-$lighter-nav-color: lighten($nav-color, 10);
+@import url(https://fonts.googleapis.com/css?family=Fjalla+One);
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
+
+$cursive-title: "Pacifico", cursive;
+$sans-serif-title: "Fjalla One", sans-serif;
+$body-font: "Roboto", sans-serif;
+$light-neutral: #c9c9c9;
 $accent-color: #39f1c8;
-$light-accent: #e2fff9;
 $dark-accent: #173e43;
-$lightest-color: #fff;
 
 * {
   box-sizing: border-box;
 }
 
-.hero-background {
-  align-items: center;
-  background: url("PaintSplatter.jpg");
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
+strong {
+  font-weight: 700;
+}
+
+// Hero
+
+header {
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  height: 100vh;
   justify-content: center;
-}
-
-.text-center {
   text-align: center;
+  background: url(codingHero.png);
+  background-size: cover;
+  align-items: center;
 }
 
-.logo {
-  left: 10px;
-  position: absolute;
-  top: 10px;
-
-  img {
-    max-width: 50px;
-  }
+@mixin textShadow($color){
+  color: #fff;
+  font-weight: bold;
+  text-shadow:
+    0 1px 0 #ccc,
+    0 2px 0 #c9c9c9,
+    0 3px 0 #bbb,
+    0 4px 0 #b9b9b9,
+    0 5px 0 #aaa,
+    0 6px 1px rgba(0,0,0,.1),
+    0 0 5px rgba(0,0,0,.1),
+    0 1px 3px rgba(0,0,0,.3),
+    0 3px 5px rgba(0,0,0,.2),
+    0 5px 10px rgba(0,0,0,.25),
+    0 10px 10px rgba(0,0,0,.2),
+    0 20px 20px rgba(0,0,0,.15);
 }
+
+h1 {
+  line-height: 2em;
+}
+
+.description {
+  background-color: transparentize(#000, .8);
+  padding: 20px;
+  border-radius: 5px;
+  color: #fff;
+  display: inline-block;
+  font-family: $body-font;
+  font-size: 20px;
+}
+
+.last-name {
+  text-align: center;
+  font-size: 150px;
+  text-transform: uppercase;
+  font-family: $sans-serif-title;
+  margin: 0;
+  @include textShadow(#fff);
+}
+
+.first-name {
+  text-align: center;
+  font-size: 75px;
+  font-family: $cursive-title;
+  margin: 0;
+  @include textShadow(#fff);
+}
+
+// Navigation
 
 nav {
   position: absolute;
   right: 0;
   top: 20px;
   text-align: right;
-  text-transform: uppercase;
-  font-family: $body-font;
+  display: inline-block;
+  background: none;
+  box-shadow: none;
+  line-height: 20px;
 
   .nav-item {
     padding-bottom: 20px;
+    margin-bottom: 10px;
   }
 
   a:link,
   a:active,
   a:visited {
-    background-color: $nav-color;
-    color: $lightest-color;
+    background-color: #fff;
+    color: $light-neutral;
     font-family: $body-font;
+    text-transform: uppercase;
+    font-weight: 400;
     font-size: 16px;
     text-decoration: none;
-    background: linear-gradient(to right, $nav-color 50%, $accent-color 50%);
+    background: linear-gradient(to right, #fff 50%, $accent-color 50%);
     background-size: 200% 100%;
     padding: 10px 25px 10px 10px;
     margin-top: 10px;
@@ -70,286 +116,114 @@ nav {
   a:hover {
     background-color: $accent-color;
     border-color: $accent-color;
-    color: $lightest-color;
+    color: #fff;
     text-decoration: none;
     transition: 1s;
     background-position: right bottom;
   }
 }
 
-.hero-title {
-  color: $lightest-color;
-  max-width: 50%;
-}
+a {
+  &:link, &:visited, &:active {
+    color: white;
+    font-weight: bold;
+  }
 
-.first-name {
-  font-family: $sans-serif-title;
-  font-size: 50px;
-  letter-spacing: 5px;
-}
-
-.last-name {
-  font-family: $serif-title;
-  font-size: 75px;
-}
-
-h1 {
-  text-align: center;
-}
-
-.personal-statement {
-  color: $lightest-color;
-  font-family: $sans-serif-title;
-  font-size: 20px;
-  letter-spacing: 2px;
-  line-height: 120%;
-  text-align: center;
-  width: 50%;
-}
-
-.down-arrow {
-  padding: 30px;
-
-  a:hover {
-    opacity: .8;
-    transition: .5s;
+  &:hover {
+    color: $accent-color;
+    transition: 1s;
   }
 }
 
-.arrow-size {
-  width: 50px;
-}
+// Portfolio Section
 
-h2 {
-  color: $dark-accent;
-  font-family: $serif-title;
-  text-transform: uppercase;
-}
-
-.quotes {
-  background-color: $lighter-nav-color;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  min-height: 200px;
-  width: 100%;
-}
-
-.col-md-offset-2 {
-  margin-left: 0;
-}
-
-.col-md-8 {
-  width: 100%;
-}
-
-.quote-inner {
-  width: 80%;
-  margin: 0 auto;
-}
-
-#quote-carousel {
-  margin-top: 0;
-  padding: 0 10px 30px;
-
-  .carousel-control {
-    background: none;
-    color: $nav-color;
-    font-size: 2.3em;
-    text-shadow: none;
-
-    .left {
-      left: 0;
-    }
-
-    .right {
-      right: 0;
-    }
-  }
-
-  .carousel-indicators {
-    bottom: 0;
-    margin-right: -19px;
-    position: absolute;
-    right: 50%;
-    top: auto;
-
-    li {
-      background: $nav-color;
-    }
-
-    .active {
-      background: $accent-color;
-    }
-  }
-}
-
-.item {
-  blockquote {
-    border-left: 0;
-    font-family: $body-font;
-    margin: 0;
-    text-align: center;
-
-    p::before {
-      float: left;
-      font-family: $body-font;
-      margin-right: 10px;
-    }
-  }
-
-  a:link,
-  a:active,
-  a:visited {
-    color: $dark-accent;
-    text-decoration: none;
-  }
-
-  a:hover {
-    opacity: .5;
-  }
-}
-
-.col-md-3 {
-  padding: 0;
-  height: 275px;
-  overflow: hidden;
-}
-
-.image-container{
-  overflow: hidden;
-  display: inline-block;
-
-  img {
-    transform: scale(1.05);
-  }
-}
-
-.index-subheads {
-  clear: both;
-  text-align: center;
+.section-header {
   background-color: $dark-accent;
-  padding-top: 15px;
-  padding-bottom: 10px;
+  overflow: hidden;
+  text-align: center;
+  padding-top: 2px;
 
   h2 {
-    color: $lightest-color;
-    padding: 0;
-    margin: 0;
-    text-shadow: 2px 2px transparentize($accent-color, .7);
+    font-family: $sans-serif-title;
+    color: white;
+    font-size: 32px;
+    text-transform: uppercase;
+    margin: 5px;
+    text-shadow: 0 1px 3px rgba(255,255,255,.3), 0 3px 5px rgba(255,255,255,.2);
   }
 }
 
-.portfolio-image {
+.thumbnail {
   width: 100%;
-
-  &:hover{
-    opacity: .5;
-    transition: 1s;
-    transform: scale(1.15);
-  }
-}
-
-.footer {
-  background-color: $nav-color;
-  clear: both;
-  text-align: center;
-  padding-top: 25px;
-}
-
-.social-media-outer {
-  display: inline-block;
-  margin: 5px;
-
-  .social-media {
-    height: 30px;
-    margin: 10px;
-  }
+  opacity: .5;
 
   &:hover {
-    background-color: $accent-color;
-    border-radius: 7px;
-    transition: 2s;
-  }
-}
-
-.disclaimer {
-  color: $lightest-color;
-  font-family: $body-font;
-  font-size: 12px;
-}
-
-.up {
-  text-align: right;
-}
-
-.up-arrow {
-  max-height: 25px;
-  margin: 10px;
-
-  &:hover {
-    opacity: .7;
+    opacity: 1;
     transition: 1s;
   }
 }
 
-// About Me Section
+.row {
+  margin-bottom: 0;
 
-.about-me {
-  max-height: 325px;
-  clear: both;
-  overflow: hidden;
-
-  .headshot {
-    width: 25%;
-    display: inline-block;
-    float: left;
-  }
-
-  .col-md-6 {
+  .col {
     padding: 0;
+    margin-bottom: -7px;
   }
+}
 
-  img {
-    width: 100%;
-    overflow: hidden;
-  }
+// About Me
+
+.headshot {
+  width: 100%;
+  border-radius: 100%;
+  padding: 20px;
 }
 
 .about-description {
-  padding: 50px;
-  text-align: center;
+  min-height: 300px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-height: 275px;
+  padding: 30px !important;
+  font-family: $body-font;
+}
 
-  h2 {
-    font-family: $serif-title;
-    margin: 0;
+.skills {
+  text-align: center;
+  padding: 20px;
+
+  h4 {
+    font-size: 20px;
   }
 
-  p {
-    font-family: $body-font;
+  .icon {
+    max-height: 40px;
+    margin: 10px;
+  }
+
+  img {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+
+    &:hover {
+      filter: none;
+      -webkit-filter: grayscale(0%);
+      transition: 1s;
+    }
   }
 }
 
 // Show page starts here
 
-.show-header {
-  padding: 0;
-  min-height: 75px;
-  background-color: $nav-color;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+.show-title {
+  text-align: center;
 
   h1 {
-    font-family: $serif-title;
     text-transform: uppercase;
     font-size: 40px;
-    color: $lightest-color;
-    text-shadow: 2px 2px transparentize($dark-accent, .7);
+    margin: 0;
+    @include textShadow(#fff);
   }
 }
 
@@ -375,7 +249,7 @@ h2 {
     background: $accent-color;
     padding: 5px;
     border: 2px solid $accent-color;
-    background: linear-gradient(to right, $lightest-color 50%, $accent-color 50%);
+    background: linear-gradient(to right, white 50%, $accent-color 50%);
     background-size: 210% 100%;
     background-position:left bottom;
     transition: 1s ease;
@@ -383,7 +257,7 @@ h2 {
 
   a:hover {
     background-color: $accent-color;
-    color: $lightest-color;
+    color: white;
     padding: 5px;
     border: 2px solid $accent-color;
     background-position: right bottom;
@@ -397,14 +271,13 @@ h2 {
 
   .technology {
     font-family: $body-font;
-    background-color: $nav-color;
-    color: $lightest-color;
+    background-color: $light-neutral;
+    color: white;
     padding: 5px;
     border-radius: 5px;
     box-shadow: 1px 1px 3px transparentize(black, .5);
     margin: 5px;
   }
-
 }
 
 .show-content {
@@ -435,6 +308,7 @@ h2 {
 
 .show-description {
   display: flex;
+  padding: 10px !important;
   justify-content: center;
   flex-direction: column;
   min-height: 300px;
@@ -447,108 +321,7 @@ h2 {
   min-height: 275px;
 }
 
-
 .show-image {
   max-width: 100%;
   padding-bottom: 15px;
-}
-
-
-@media only screen and (max-width: 768px) {
-  .hero-background {
-    background: url("paintSplatterResponsive.png");
-  }
-
-  .first-name {
-    font-size: 40px;
-  }
-
-  .last-name {
-    font-size: 40px;
-  }
-
-  .personal-statement {
-    font-size: 16px;
-  }
-
-  .down-arrow {
-    display: none;
-  }
-
-  .col-md-3 {
-    height: 350px;
-  }
-
-  .about-me {
-    max-height: none;
-
-    .headshot {
-      width: 100%;
-      float: none;
-    }
-
-  }
-
-  .show-button {
-    font-family: $body-font;
-    display: block;
-    padding-top: 10px;
-
-    a:link, a:active, a:visited {
-      text-transform: uppercase;
-      text-decoration: none;
-      background-color: $lightest-color;
-      color: $accent-color;
-      padding: 5px;
-      border: 2px solid $accent-color;
-    }
-
-    a:hover {
-      color: $lightest-color;
-    }
-  }
-
-  .show-title {
-    width: 80%;
-    margin: 0 auto;
-  }
-
-  .show-description {
-    margin: 30px;
-  }
-
-  .technology {
-    display: inline-block;
-    margin-top: 30px;
-  }
-
-}
-
-@media only screen
-and (min-device-width : 768px)
-and (max-device-width : 1024px)
-and (orientation : portrait) {
-
-  .about-me {
-    max-height: none;
-
-    .headshot {
-      display: none;
-    }
-
-  }
-
-  .hero-background {
-    background: url("PaintSplatter.jpg");
-    background-size: cover;
-    background-position: center;
-  }
-
-  .show-images {
-    margin: 50px;
-  }
-
-  .show-description {
-    margin: 50px;
-  }
 }
