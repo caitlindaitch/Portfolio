@@ -221,10 +221,18 @@ a {
 
   h1 {
     text-transform: uppercase;
-    font-size: 40px;
+    font-size: 50px;
     margin: 0;
     @include textShadow(#fff);
   }
+}
+
+.show-logo {
+  max-width: 50px;
+  margin: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 .show-header-arrow {
@@ -288,22 +296,25 @@ a {
   text-align: center;
 }
 
-.slide-left-start {
-  left: -100%;
-}
+.row {
 
-.slide-left-end {
-  left: 0%;
-  transition: 2s;
-}
+  .slide-left-start {
+    left: -100%;
+  }
 
-.slide-right-start {
-  right: -100%;
-}
+  .slide-left-end {
+    left: 0%;
+    transition: 2s;
+  }
 
-.slide-right-end {
-  right: 0%;
-  transition: 2s;
+  .slide-right-start {
+    right: -100%;
+  }
+
+  .slide-right-end {
+    right: 0%;
+    transition: 2s;
+  }
 }
 
 .show-description {
@@ -315,9 +326,6 @@ a {
 }
 
 .show-images {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
   min-height: 275px;
 }
 
