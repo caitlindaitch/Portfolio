@@ -237,7 +237,7 @@ a:hover {
   padding: 10px !important;
   justify-content: center;
   flex-direction: column;
-  min-height: 300px; }
+  min-height: 200px; }
 
 .show-images {
   min-height: 275px; }
