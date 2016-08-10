@@ -40,17 +40,21 @@
       <p>I have been interested in programming and design since middle school when I spent my free time building websites for fun. Years later, I hit the jackpot when I was offered a position as a Digital Producer for a web development agency in Washington, DC. Working as a project manager for all things digital ultimately solidified my passion for web development. I fell in love with programming after taking a part-time Front End Web Development course, and soon after decided to enroll in General Assembly's full-time immersive course. It has been true love ever since.</p>
       <p>These are a few of my favorite things:</p>
       <div class="skills">
-        <%= image_tag("icons/javascript.jpg", :class =>"icon", :alt =>"JavaScript") %>
-        <%= image_tag("icons/css3.png", :class =>"icon", :alt =>"CSS") %>
-        <%= image_tag("icons/sass.png", :class =>"icon", :alt =>"Sass") %>
-        <%= image_tag("icons/html5.png", :class =>"icon", :alt =>"HTML") %>
-        <%= image_tag("icons/angular.png", :class =>"icon", :alt =>"AngularJS") %>
-        <%= image_tag("icons/ruby.png", :class =>"icon", :alt =>"Ruby") %>
-        <%= image_tag("icons/rails.png", :class =>"icon", :alt =>"Rails") %>
-        <%= image_tag("icons/node.jpg", :class =>"icon", :alt =>"Node.js") %>
-        <%= image_tag("icons/mongo.png", :class =>"icon", :alt =>"MongoDB") %>
-        <%= image_tag("icons/git.png", :class =>"icon", :alt =>"Git") %>
-        <%= image_tag("icons/photoshop.svg", :class =>"icon", :alt =>"Photoshop") %>
+        <div class="skills-inner">
+            <%= image_tag("icons/javascript.jpg", :class =>"icon tooltipped", :alt =>"JavaScript", :data => {:position => 'bottom', :delay => 50, :tooltip =>"JavaScript"}) %>
+            <%= image_tag("icons/css3.png", :class =>"icon tooltipped", :alt =>"CSS") %>
+            <%= image_tag("icons/sass.png", :class =>"icon tooltipped", :alt =>"Sass") %>
+            <%= image_tag("icons/html5.png", :class =>"icon tooltipped", :alt =>"HTML") %>
+            <%= image_tag("icons/angular.png", :class =>"icon tooltipped", :alt =>"AngularJS") %>
+            <%= image_tag("icons/ruby.png", :class =>"icon tooltipped", :alt =>"Ruby") %>
+            <%= image_tag("icons/rails.png", :class =>"icon tooltipped", :alt =>"Rails") %>
+            <%= image_tag("icons/node.jpg", :class =>"icon tooltipped", :alt =>"Node.js") %>
+            <%= image_tag("icons/mongo.png", :class =>"icon tooltipped", :alt =>"MongoDB") %>
+            <%= image_tag("icons/git.png", :class =>"icon tooltipped", :alt =>"Git") %>
+            <%= image_tag("icons/sketch.png", :class =>"icon tooltipped", :alt =>"Sketch") %>
+            <%= image_tag("icons/photoshop.svg", :class =>"icon tooltipped", :alt =>"Photoshop") %>
+          </div>
+        </div>
       </div>
     </div>
   </div>

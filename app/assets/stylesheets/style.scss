@@ -197,7 +197,7 @@ a {
   }
 
   .icon {
-    max-height: 40px;
+    max-height: 35px;
     margin: 10px;
   }
 
@@ -211,6 +211,19 @@ a {
       transition: 1s;
     }
   }
+}
+
+.skills-inner {
+  position: relative;
+}
+
+.tooltip {
+  position: absolute;
+  top: -15px;
+  width: 100%;
+  font-family: $body-font;
+  font-size: 20px;
+  color: $accent-color;
 }
 
 // Show page starts here
@@ -247,6 +260,7 @@ a {
   font-family: $body-font;
   font-size: 20px;
   margin: 10px;
+  display: inline-block;
 
   a:link, a:active, a:visited {
     text-transform: uppercase;
@@ -335,6 +349,43 @@ a {
 
 @media only screen and (max-width: 667px) {
   h1 {
-    font-size: 100px;
+
+    .last-name {
+      font-size: 100px;
+    }
+  }
+
+  .show-logo {
+    padding-top: 20px;
+    max-width: 50px;
+    position: static;
+    margin: 0 auto;
+  }
+
+  .show-title {
+
+    h1 {
+      line-height: 40px;
+      font-size: 30px;
+    }
+  }
+
+  .show-technologies {
+
+    .technology {
+      display: block;
+      margin: 0 auto;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      width: 75%;
+    }
+  }
+
+  .description {
+    max-width: 75%;
+  }
+
+  .show-button {
+    width: 100%;
   }
 }
